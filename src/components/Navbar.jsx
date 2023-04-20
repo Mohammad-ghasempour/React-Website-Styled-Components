@@ -8,21 +8,56 @@ const Wrapper = styled.div`
    padding: 10px 20px;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 `;
+const Left = styled.div`
+   width: 60%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+`;
+
 const Logo = styled.h1`
    font-weight: bold;
    text-decoration: underline crimson;
+`;
+const Menu = styled.ul`
+   display: flex;
+`;
+const MenuItem = styled.li`
+   list-style: none;
+   display: flex;
+   margin-right: 30px;
+   font-size: 20px;
+   font-weight: bold;
+   color: gray;
+`;
 
+const Button = styled.button`
+   border: 2px solid white;
+   color: white;
+   background-color: crimson;
+   padding: 10px 15px;
+   font-weight: bold;
+   border-radius: 10px;
+   cursor: pointer;
 `;
 
 const Navbar = () => {
    return (
       <Container>
          <Wrapper>
-            <span>
+            <Left>
                <Logo>Oxin Web</Logo>
-            </span>
-            <span>Button</span>
+               <Menu>
+                  <MenuItem>Home</MenuItem>
+                  <MenuItem>Services</MenuItem>
+                  <MenuItem>Samples</MenuItem>
+                  <MenuItem>Prices</MenuItem>
+                  <MenuItem>Contact</MenuItem>
+               </Menu>
+            </Left>
+            <Button>Join Today</Button>
          </Wrapper>
       </Container>
    );
