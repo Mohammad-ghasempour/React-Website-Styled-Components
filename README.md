@@ -17,3 +17,10 @@ You may also see any lint errors in the console.
 
 ### Using styled-Component to build style css with javascript.
 - styled-components lets us write actual CSS in our JavaScript. (https://styled-components.com/)
+
+
+### I used Clip Path Generator technique to make a slant shape in the web page.
+[Css clip-path maker](https://bennettfeely.com/clippy/)
+
+
+

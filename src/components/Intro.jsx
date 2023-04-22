@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ImageOfMe from "../images/Mohammad-Ghasempour.png";
 
 const Container = styled.div`
    height: calc(100vh - 50px);
@@ -60,6 +61,13 @@ const Button = styled.button`
 
 const Right = styled.div`
    width: 40%;
+   display: flex;
+   align-items: center;
+   margin-right: 10px;
+`;
+const Image = styled.img`
+   width: 100%;
+   height: 600px;
 `;
 const Intro = () => {
    return (
@@ -79,7 +87,9 @@ const Intro = () => {
                </ContactInformation>
             </Info>
          </Left>
-         <Right>Right</Right>
+         <Right>
+            <Image src={ImageOfMe}></Image>
+         </Right>
       </Container>
    );
 };
