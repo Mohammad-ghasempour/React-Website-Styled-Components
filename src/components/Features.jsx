@@ -36,7 +36,6 @@ const SubTitle = styled.h3`
 const Description = styled.p`
    width: 90%;
    font-size: 20px;
-   font-weight: bold;
    color: #777;
    margin-top: 30px;
 `;

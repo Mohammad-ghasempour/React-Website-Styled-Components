@@ -2,6 +2,7 @@ import styled, { css } from "styled-components";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";
 import Features from "./components/Features";
+import Samples from "./components/Samples";
 
 const Container = styled.div`
    height: 100vh;
@@ -41,6 +42,9 @@ function App() {
          <Container>
             <Features />
             <FeatureShape/>
+         </Container>
+         <Container>
+            <Samples/>
          </Container>
       </>
    );
