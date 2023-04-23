@@ -28,11 +28,11 @@ position: absolute;
 top: 50px;
 left: -60;
 
-animation: circle 25s linear alternate infinite;
+animation: circle 20s linear alternate infinite;
 
 @keyframes circle {
     to {
-        transform : translate(50vw , 5vh);
+        transform : translate(60vw , 5vh);
     }
 }
 `
@@ -50,7 +50,7 @@ animation: rectAngle 15s linear alternate infinite;
 
 @keyframes rectAngle {
     to {
-        transform : translate(15vw , 65vh);
+        transform : translate(55vw , 65vh);
     }
 }
 `

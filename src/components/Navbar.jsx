@@ -51,7 +51,7 @@ const Navbar = () => {
                <Logo>Oxin Web</Logo>
                <Menu>
                   <MenuItem>Home</MenuItem>
-                  <MenuItem>Services</MenuItem>
+                  <MenuItem>Features</MenuItem>
                   <MenuItem>Samples</MenuItem>
                   <MenuItem>Prices</MenuItem>
                   <MenuItem>Contact</MenuItem>
