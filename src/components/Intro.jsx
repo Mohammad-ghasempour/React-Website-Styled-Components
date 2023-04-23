@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import ImageOfMe from "../images/Mohammad-Ghasempour.png";
+import AnimatedShapes from "./AnimatedShapes";
 
 const Container = styled.div`
    height: calc(100vh - 50px);
@@ -86,6 +87,7 @@ const Intro = () => {
                   <ContactText>For any question or concern</ContactText>
                </ContactInformation>
             </Info>
+            <AnimatedShapes/>
          </Left>
          <Right>
             <Image src={ImageOfMe}></Image>
