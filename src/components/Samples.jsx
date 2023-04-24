@@ -3,6 +3,7 @@ import styled from "styled-components";
 import tablet from "../images/tabletGirl.png";
 import playIcon from "../images/playIcon.png";
 import Magnifire from "../images/Magnifire.png";
+import MiniCard from "./MiniCard";
 
 const Container = styled.div`
    height: 100vh;
@@ -17,7 +18,7 @@ const Left = styled.div`
 `;
 const Image = styled.img`
    width: 35%;
-   margin-left: 30px;
+   margin-left: 35px;
    position: absolute;
    bottom: 0;
 `;
@@ -41,12 +42,14 @@ const Description = styled.p`
    text-align: justify;
 `;
 
-const Boxes = styled.div`
+const CardContainer = styled.div`
    display: flex;
    flex-direction: row;
-   // justify-content: space-around;
-   margin-top: 60px;
-   // background-color: yellow;
+   justify-content: space-between;
+   align-items: center;
+   width: 90%;
+   margin-top: 40px;
+
 `;
 const Box = styled.div`
    width: 140px;
@@ -56,7 +59,8 @@ const Box = styled.div`
    justify-content: center;
    align-items: center;
    margin-right: 70px;
-   box-shadow: 0px 2px 14px -5px rgba(0, 0, 0, 0.35);
+   -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.38);
+   box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.38);
 `;
 
 const Button = styled.button`
@@ -102,26 +106,12 @@ const Samples = () => {
                saying hi, our landing page and email templates help you get the
                job done.
             </Description>
-            <Boxes>
-               <Box>
-                  <Icon src={Magnifire} />
-                  <Desc>
-                     Lorem Ipsum is simply dummy text of the printing industry.
-                  </Desc>
-               </Box>
-               <Box>
-                  <Icon src={Magnifire} />
-                  <Desc>
-                     Lorem Ipsum is simply dummy text of the printing industry.
-                  </Desc>
-               </Box>
-               <Box>
-                  <Icon src={Magnifire} />
-                  <Desc>
-                     Lorem Ipsum is simply dummy text of the printing industry.
-                  </Desc>
-               </Box>
-            </Boxes>
+            <CardContainer>
+               <MiniCard/>
+               <MiniCard/>
+               <MiniCard/>
+              
+            </CardContainer>
             <Button>
                <Icon src={playIcon} />
                How it works!

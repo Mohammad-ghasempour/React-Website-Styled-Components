@@ -29,6 +29,11 @@ const FeatureShape = styled.div`
    clip-path: polygon(53% 0, 0% 0, 0 100%, 30% 100%);
    background-color: pink;
 `;
+const ServicesShape = styled.div`
+${Shape}
+clip-path: polygon(30% 0, 0% 0, 0 100%, 30% 100%);
+background-color: #ff8da0;
+`
 
 function App() {
    return (
@@ -45,6 +50,7 @@ function App() {
          </Container>
          <Container>
             <Samples/>
+            <ServicesShape/>
          </Container>
       </>
    );
