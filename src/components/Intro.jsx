@@ -65,10 +65,15 @@ const Right = styled.div`
    display: flex;
    align-items: center;
    margin-right: 10px;
+   position: relative;
 `;
 const Image = styled.img`
-   width: 100%;
-   height: 600px;
+   width: 90%;
+   height: 100%;
+   position: absolute;
+   right: 0;
+   bottom: 0;
+   margin-right: -30px;
 `;
 const Intro = () => {
    return (
@@ -87,7 +92,7 @@ const Intro = () => {
                   <ContactText>For any question or concern</ContactText>
                </ContactInformation>
             </Info>
-            <AnimatedShapes/>
+            <AnimatedShapes />
          </Left>
          <Right>
             <Image src={ImageOfMe}></Image>
