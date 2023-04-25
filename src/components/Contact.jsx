@@ -1,5 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import LocationIcon from "../images/LocationIcon.png";
+import PhoneIcon from "../images/PhoneIcon.png";
+import PaperflyIcon from "../images/PaperFly.png";
 
 const Container = styled.div`
    height: 100vh;
@@ -49,7 +52,25 @@ const Button = styled.button`
 
 const Right = styled.div`
    width: 50%;
+   display: flex;
+   flex-direction: column;
 `;
+
+const InfoContainer = styled.div`
+   display: flex;
+   align-items: center;
+`;
+const Icon = styled.img`
+   width: 30px;
+   height: 30px;
+   padding: 10px;
+`;
+const ContactInformation = styled.span`
+   margin-left: 20px;
+   font-size: 20px;
+   color: #333;
+`;
+
 const Contact = () => {
    return (
       <Container>
@@ -67,7 +88,17 @@ const Contact = () => {
             </Form>
          </Left>
 
-         <Right>R</Right>
+         <Right>
+            <InfoContainer>
+               <Icon src={LocationIcon} ></Icon>    <ContactInformation>Stavanger , Norway</ContactInformation>
+            </InfoContainer>
+            <InfoContainer>
+               <Icon src={PhoneIcon} /> <ContactInformation>+4793828281</ContactInformation>
+            </InfoContainer>
+            <InfoContainer>
+               <Icon src={PaperflyIcon} /> <ContactInformation>M.gh84nor@gmail.com</ContactInformation>
+            </InfoContainer>
+         </Right>
       </Container>
    );
 };
