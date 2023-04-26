@@ -99,7 +99,7 @@ const Contact = () => {
                <Icon src={LocationIcon} ></Icon>    <Text>Stavanger, Rogaland State of Norway</Text>
             </InfoContainer>
             <InfoContainer>
-               <Icon src={PhoneIcon} /> <Text>+47 938 282 81</Text> <Text>+47 93 828 81</Text>
+               <Icon src={PhoneIcon} /> <Text>+47 93 828 281</Text> <Text>+47 93 828 281</Text>
             </InfoContainer>
             <InfoContainer>
                <Icon src={PaperflyIcon} /> <Text>Info@oxinweb.com</Text> <Text>M.gh84nor@gmail.com</Text>
