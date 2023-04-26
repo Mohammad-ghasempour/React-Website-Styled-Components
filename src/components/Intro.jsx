@@ -7,6 +7,9 @@ const Container = styled.div`
    height: calc(100vh - 50px);
    display: flex;
    padding: 20px;
+   @media only screen and (max-width: 430px) {
+      flex-direction: column;
+   }
 `;
 const Left = styled.div`
    width: 60%;
@@ -14,10 +17,18 @@ const Left = styled.div`
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   @media only screen and (max-width: 430px) {
+      width: 100%;
+      height: 100%;
+   }
 `;
 const Title = styled.h1`
    width: 60%;
    font-size: 60px;
+   @media only screen and (max-width: 430px) {
+      width: 100%;
+      font-size: 50px;
+   }
 `;
 const IntroText = styled.p`
    width: 60%;
@@ -25,6 +36,9 @@ const IntroText = styled.p`
    text-align: justify;
    text-justify: inter-word;
    margin-top: 20px;
+   @media only screen and (max-width: 430px) {
+      width: 100%;
+   }
 `;
 const Info = styled.div`
    width: 60%;
@@ -32,6 +46,11 @@ const Info = styled.div`
    display: flex;
    justify-content: space-between;
    align-items: center;
+   @media only screen and (max-width: 430px){
+    width: 100%;
+    flex-direction:column;
+    margin-top: 150px;
+   }
 `;
 
 const ContactInformation = styled.div`
@@ -58,6 +77,9 @@ const Button = styled.button`
    letter-spacing: 2px;
    border-radius: 10px;
    cursor: pointer;
+   @media only screen and (max-width: 430px){
+    margin-bottom: 20px;
+   }
 `;
 
 const Right = styled.div`
@@ -74,6 +96,13 @@ const Image = styled.img`
    right: 0;
    bottom: 0;
    margin-right: -30px;
+   @media only screen and (max-width: 430px) {
+      display: none;
+   }
+   /* @media only screen and (max-width: 834px){
+      width: 100%;
+      height:60%;
+   } */
 `;
 const Intro = () => {
    return (

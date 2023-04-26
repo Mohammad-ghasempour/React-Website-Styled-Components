@@ -15,14 +15,33 @@ const Left = styled.div`
    display: flex;
    align-items: center;
    justify-content: space-between;
+
+   /* @media only screen and (max-width: 834px){
+margin-top: 20px;      
+   } */
 `;
 
 const Logo = styled.h1`
    font-weight: bold;
    text-decoration: underline crimson;
+
+   @media only screen and (max-width: 834px){
+      width: 40%;
+
+   }
+   
 `;
 const Menu = styled.ul`
    display: flex;
+
+   @media only screen and (max-width: 430px){
+      display: none;
+   }
+   @media only screen and (max-width: 834px){
+      width: 60%
+   }
+      
+   
 `;
 const MenuItem = styled.li`
    list-style: none;
@@ -31,6 +50,11 @@ const MenuItem = styled.li`
    font-size: 20px;
    font-weight: bold;
    color: gray;
+
+   @media only screen and (max-width: 834px){
+      margin-right: 25px;
+
+   }
 `;
 
 const Button = styled.button`
