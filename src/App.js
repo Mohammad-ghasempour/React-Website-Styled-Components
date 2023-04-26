@@ -5,7 +5,8 @@ import Features from "./components/Features";
 import Samples from "./components/Samples";
 import Prices from "./components/Prices";
 import Contact from "./components/Contact";
-import BackgroundImage from "./images/background.jpg"
+// import BackgroundImage from "./images/background.jpg"
+import Footer from "./components/Footer";
 
 const Container = styled.div`
    height: 100vh;
@@ -43,15 +44,15 @@ clip-path: polygon(100% 0, 30% 0, 70% 100%, 100% 100%);
 background-color: crimson;
 `
 
-const Background = styled.div`
-${Shape}
-width: 100%;
-height: 100%;
-background-color: yellow;
-background-image: url(${BackgroundImage});
-background-size: cover;
+// const Background = styled.div`
+// ${Shape}
+// width: 100%;
+// height: 100%;
+// background-color: yellow;
+// background-image: url(${BackgroundImage});
+// background-size: cover;
 
-`
+// `
 
 function App() {
    return (
@@ -76,7 +77,8 @@ function App() {
          </Container>
          <Container>
            <Contact/>
-           <Background/>
+           {/* <Background/> */}
+           <Footer/>
          </Container>
       </>
    );

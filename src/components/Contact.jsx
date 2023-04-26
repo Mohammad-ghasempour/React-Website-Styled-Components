@@ -3,9 +3,13 @@ import styled from "styled-components";
 import LocationIcon from "../images/LocationIcon.png";
 import PhoneIcon from "../images/PhoneIcon.png";
 import PaperflyIcon from "../images/PaperFly.png";
+import BackgroundImage from "../images/background.jpg"
+
 
 const Container = styled.div`
-   height: 100vh;
+   height: 90%;
+   background-image: url(${BackgroundImage});
+   background-size: cover;
    display: flex;
    align-items: center;
 `;
@@ -18,8 +22,9 @@ const Title = styled.span`
 const Left = styled.div`
    width: 50%;
    margin-left: 50px;
+   margin-top: 60px;
 `;
-const Form = styled.div`
+const Form = styled.form`
    height: 300px;
    width: 500px;
    display: flex;
@@ -59,13 +64,14 @@ const Right = styled.div`
 const InfoContainer = styled.div`
    display: flex;
    align-items: center;
-`;
+   margin-bottom: 10px;
+   `;
 const Icon = styled.img`
    width: 30px;
    height: 30px;
    padding: 10px;
 `;
-const ContactInformation = styled.span`
+const Text = styled.p`
    margin-left: 20px;
    font-size: 20px;
    color: #333;
@@ -90,13 +96,13 @@ const Contact = () => {
 
          <Right>
             <InfoContainer>
-               <Icon src={LocationIcon} ></Icon>    <ContactInformation>Stavanger , Norway</ContactInformation>
+               <Icon src={LocationIcon} ></Icon>    <Text>Stavanger, Rogaland State of Norway</Text>
             </InfoContainer>
             <InfoContainer>
-               <Icon src={PhoneIcon} /> <ContactInformation>+4793828281</ContactInformation>
+               <Icon src={PhoneIcon} /> <Text>+47 938 282 81</Text> <Text>+47 93 828 81</Text>
             </InfoContainer>
             <InfoContainer>
-               <Icon src={PaperflyIcon} /> <ContactInformation>M.gh84nor@gmail.com</ContactInformation>
+               <Icon src={PaperflyIcon} /> <Text>Info@oxinweb.com</Text> <Text>M.gh84nor@gmail.com</Text>
             </InfoContainer>
          </Right>
       </Container>
