@@ -10,6 +10,10 @@ const Container = styled.div`
    align-items: center;
    -webkit-box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
    box-shadow: 0px 0px 17px -11px rgba(0, 0, 0, 0.58);
+   @media only screen and (max-width: 430px) {
+    width: 90px;
+    padding: 10px;
+   }
 `;
 const Icon = styled.img`
    width: 20px;

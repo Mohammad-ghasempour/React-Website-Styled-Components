@@ -33,16 +33,16 @@ const FeatureShape = styled.div`
    clip-path: polygon(53% 0, 0% 0, 0 100%, 30% 100%);
    background-color: pink;
 `;
-const ServicesShape = styled.div`
-${Shape}
-clip-path: polygon(30% 0, 0% 0, 0 100%, 30% 100%);
-background-color: #ff8da0;
-`
+const SampleShape = styled.div`
+   ${Shape}
+   clip-path: polygon(30% 0, 0% 0, 0 100%, 30% 100%);
+   background-color: #ff8da0;
+`;
 const PricesShape = styled.div`
-${Shape}
-clip-path: polygon(100% 0, 30% 0, 70% 100%, 100% 100%);
-background-color: crimson;
-`
+   ${Shape}
+   clip-path: polygon(100% 0, 30% 0, 70% 100%, 100% 100%);
+   background-color: crimson;
+`;
 
 // const Background = styled.div`
 // ${Shape}
@@ -55,6 +55,8 @@ background-color: crimson;
 // `
 
 function App() {
+   const smallScreen = window.screen.width <= 430 ? true : false;
+
    return (
       <>
          <Container>
@@ -65,20 +67,20 @@ function App() {
 
          <Container>
             <Features />
-            <FeatureShape/>
+            <FeatureShape />
          </Container>
          <Container>
-            <Samples/>
-            <ServicesShape/>
+            <Samples />
+            {!smallScreen && <SampleShape />}
          </Container>
          <Container>
-           <Prices/>
-           <PricesShape/>
+            <Prices />
+            <PricesShape />
          </Container>
          <Container>
-           <Contact/>
-           {/* <Background/> */}
-           <Footer/>
+            <Contact />
+            {/* <Background/> */}
+            <Footer />
          </Container>
       </>
    );
