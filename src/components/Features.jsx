@@ -6,23 +6,38 @@ import AnimatedShapes from "./AnimatedShapes";
 const Container = styled.div`
    display: flex;
    height: 100vh;
+   @media only screen and (max-width: 430px) {
+      flex-direction: column;
+      padding: 30px 20px;
+   }
 `;
 const Left = styled.div`
    width: 50%;
+   @media only screen and (max-width: 430px) {
+      display:none;
+   }
 `;
 const Right = styled.div`
    display: flex;
    flex-direction: column;
    justify-content: center;
    width: 50%;
+   @media only screen and (max-width: 430px) {
+      width: 100%;
+   }
 `;
 const Image = styled.img`
    width: 80%;
    height: 80%;
-margin-top: 30px;   
+   margin-top: 30px;
+
 `;
 const Title = styled.span`
    font-size: 70px;
+   @media only screen and (max-width: 430px) {
+      font-size: 50px;
+      margin-bottom: 30px;
+   }
 `;
 
 const SubTitle = styled.h3`
@@ -38,6 +53,9 @@ const Description = styled.p`
    font-size: 20px;
    color: #777;
    margin-top: 30px;
+   @media only screen and (max-width: 430px) {
+      margin:30px 0px 30px 0px ;
+   }
 `;
 const Button = styled.button`
    width: 150px;
@@ -71,7 +89,7 @@ const Features = () => {
             </Description>
             <Button>Learn More</Button>
          </Right>
-         <AnimatedShapes/>
+         <AnimatedShapes />
       </Container>
    );
 };
