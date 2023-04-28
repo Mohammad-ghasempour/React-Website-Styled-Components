@@ -48,7 +48,9 @@ const Video = styled.video`
    left: 0;
    margin: auto;
    @media only screen and (max-width: 430px) {
-    width: 100%
+    width: 100%;
+    background-color: transparent;
+
    }
 `;
 
@@ -136,7 +138,7 @@ const CloseButton = styled.span`
    font-weight: bold;
    position: absolute;
    top: 32%;
-   right: 2%;
+   right: 3%;
 `;
 
 const Samples = () => {
@@ -176,7 +178,7 @@ const Samples = () => {
             </Button>
          </Right>
          {smallScreen && open && (
-            <Modal>
+            <Modal onClick={()=> setOpen(false)}>
                <Video
                   open={open}
                   autoPlay
