@@ -8,6 +8,10 @@ display: flex;
 flex-direction: row;
 align-items: center;
 justify-content: center;
+@media only screen and (max-width: 430px) {
+    flex-direction: column;
+    
+   }
 
 `
 
